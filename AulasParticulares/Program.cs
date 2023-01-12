@@ -1,11 +1,8 @@
-﻿string nome = CadastrarNome();
-int idade = CadastrarIdade();
-decimal altura = CadastrarAltura();
+﻿using AulasParticulares.Models;
 
-ApresentarDados();
-
-public string Nome { get; set; }
-
+string nome = ProcessoDeCadastramento.CadastrarNome();
+int idade = ProcessoDeCadastramento.CadastrarIdade();
+decimal altura = ProcessoDeCadastramento.CadastrarAltura();
 
 decimal CadastrarAltura()
 {
@@ -21,25 +18,3 @@ string CadastrarNome()
     string nome = Console.ReadLine();
     PularDuasLinhas();
 
-    return nome;
-}
-
-int CadastrarIdade()
-{
-    Console.WriteLine("Qual a sua idade?");
-    int idade = Convert.ToInt32(Console.ReadLine());
-    PularDuasLinhas();
-
-    return idade;
-}
-
-void ApresentarDados()
-{
-    Console.WriteLine($"nome: {nome} \nidade: {idade} \naltura: {altura}");
-}
-
-void PularDuasLinhas()
-{
-    Console.WriteLine("");
-    Console.WriteLine("");
-}
