@@ -4,6 +4,9 @@ decimal altura = CadastrarAltura();
 
 ApresentarDados();
 
+public string Nome { get; set; }
+
+
 decimal CadastrarAltura()
 {
     Console.WriteLine("Qual a sua altura?");
