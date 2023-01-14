@@ -1,7 +1,7 @@
-﻿using AulasParticulares.Models;
+﻿using AulasParticulares.Models.Services;
 
-string nome = ProcessoDeCadastramento.CadastrarNome();
-int idade = ProcessoDeCadastramento.CadastrarIdade();
-decimal altura = ProcessoDeCadastramento.CadastrarAltura();
+ProcessoCadastroCliente.CadastrarCliente();
 
-ProcessoDeCadastramento.ApresentarDados(nome, idade, altura);
+//ProcessoDeCadastramentoCarros.CadastrarCarros();
+
+
